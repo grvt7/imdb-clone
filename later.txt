@@ -1,0 +1,2 @@
+//   add to prettier to format tailwind css
+//   "plugins": ["prettier-plugin-tailwindcss"]

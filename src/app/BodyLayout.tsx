@@ -5,7 +5,6 @@ import { useDrawerContext } from '@/context/drawer';
 
 const BodyLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { showDrawer, setShowDrawer } = useDrawerContext();
-  console.log(showDrawer);
 
   return (
     <body

@@ -6,7 +6,7 @@ import logo from '../../../public/logo.svg';
 import MenuLogo from '@/icons/MenuLogo';
 import { GoSearch } from 'react-icons/go';
 import SearchComponent from '../search';
-import { searchDropDown } from '@/components/utils/headerSearchConfig';
+import { searchDropDown } from '@/utils/headerSearchConfig';
 import TopDrawer from './TopDrawer';
 import SideDrawer from './SideDrawer';
 import { HeaderPropTypes } from './types';

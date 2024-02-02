@@ -1,8 +1,8 @@
 import React, { FC, useState } from 'react';
-import { searchDropDown } from '@/components/utils/headerSearchConfig';
+import { searchDropDown } from '@/utils/headerSearchConfig';
 import { FaCaretDown, FaCaretUp } from 'react-icons/fa';
 import { SearchComponentPropType } from './types';
-import { getIcons } from '../utils/icons';
+import { getIcons } from '../../utils/icons';
 
 const SearchComponent: FC<SearchComponentPropType> = ({
   searchFilter,

@@ -10,7 +10,7 @@ import {
   AccordionPanel,
   Box,
 } from '@chakra-ui/react';
-import { getIcons } from '../utils/icons';
+import { getIcons } from '../../utils/icons';
 import { sideDrawerConfig } from './config';
 
 const SideDrawer: FC<DrawerPropTypes> = ({ showDrawer, setShowDrawer }) => {

@@ -8,7 +8,7 @@ import logo from '../../../public/logo.svg';
 import Cross from '@/icons/Cross';
 import { Grid, GridItem } from '@chakra-ui/react';
 import { topDrawerConfig } from './config';
-import { getIcons } from '../utils/icons';
+import { getIcons } from '../../utils/icons';
 
 const TopDrawer: FC<DrawerPropTypes> = ({ showDrawer, setShowDrawer }) => {
   const variants = {

@@ -7,32 +7,32 @@ interface SearchDropDownItem {
 export const searchDropDown: SearchDropDownItem[] = [
   {
     name: 'All',
-    icon: 'GoSearch',
+    icon: 'searchIcon',
     value: 'all',
   },
   {
     name: 'Titles',
-    icon: 'MdLocalMovies',
+    icon: 'moviesIcon',
     value: 'titles',
   },
   {
-    name: 'Episodes',
-    icon: 'PiTelevision',
+    name: 'TV Episodes',
+    icon: 'televisionIcon',
     value: 'episodes',
   },
   {
     name: 'Celebs',
-    icon: 'Celebs',
+    icon: 'celebsIcon',
     value: 'celebs',
   },
   {
     name: 'Companies',
-    icon: 'Companies',
+    icon: 'companiesIcon',
     value: 'companies',
   },
   {
     name: 'Keywords',
-    icon: 'Keywords',
+    icon: 'keywordsIcon',
     value: 'keywords',
   },
 ];

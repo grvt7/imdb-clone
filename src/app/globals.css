@@ -2,12 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html {
-    margin: 0px;
-    padding: 0px;
-    font-family: Roboto,Helvetica,Arial,sans-serif;;
-}
-*/
-/* body {
+body {
     background-color: #000000;
-} */
+    font-family: 'Roboto',Helvetica,Arial,sans-serif;
+    letter-spacing: .6px;
+
+}
+
+@layer components {
+    .stripe {
+        background-image: linear-gradient(
+        45deg,
+        rgba(49, 49, 49, 1) 10%,
+        transparent 5% 45%, 
+        rgba(49, 49, 49, 1) 35% 60%, 
+        transparent 55% 95%, 
+        rgba(49, 49, 49, 1) 90%
+        );
+        background-size: 10px 10px;
+    }
+}

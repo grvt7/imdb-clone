@@ -16,7 +16,12 @@ const config: Config = {
       backgroundColor: {
         header: '#121212',
         headerHover: '#252525',
+        drawer: '#1f1f1f',
       },
+      textColor: {
+        icon: '#8f8f8f',
+      },
+      colors: {},
     },
   },
   plugins: [],

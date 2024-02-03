@@ -15,7 +15,7 @@ const SearchComponent: FC<SearchComponentPropType> = ({
   return (
     <div className='flex items-center relative'>
       <div
-        className='w-1/8 px-2 py-[0.2rem] inline-flex bg-white text-black rounded-l-sm'
+        className='w-1/8 px-2 py-[0.2rem] inline-flex bg-white text-black rounded-l-md'
         onClick={() => setCaret(!caret)}>
         <h4 className='flex items-center justify-center flex-1 gap-1 font-semibold'>
           {selectedSearch}
@@ -26,7 +26,7 @@ const SearchComponent: FC<SearchComponentPropType> = ({
         className='h-[1.9rem] w-[0.07rem] bg-gray-200 inline-block'
         style={{ marginLeft: '-2px' }}></div>
       <input
-        className='border-none outline-none grow px-2 py-[0.2rem] text-black rounded-r-sm'
+        className='border-none outline-none grow px-2 py-[0.2rem] text-black rounded-r-md'
         type='text'
         placeholder='Search IMDb Database'
         onChange={(e) => setSearch(e.target.value)}

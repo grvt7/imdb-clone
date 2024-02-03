@@ -34,7 +34,7 @@ const SideDrawer: FC<DrawerPropTypes> = ({ showDrawer, setShowDrawer }) => {
     },
   };
 
-  const setActiveAccordian = (value: string) => {
+  const setActiveAccordion = (value: string) => {
     if (value === active) {
       setActive('');
     } else {
@@ -91,7 +91,7 @@ const SideDrawer: FC<DrawerPropTypes> = ({ showDrawer, setShowDrawer }) => {
                   <h2>
                     <AccordionButton
                       className={`gap-2 py-2 group px-4`}
-                      onClick={() => setActiveAccordian(item.value)}>
+                      onClick={() => setActiveAccordion(item.value)}>
                       <Box
                         as='span'
                         flex='0'

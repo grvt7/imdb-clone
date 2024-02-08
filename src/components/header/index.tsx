@@ -16,10 +16,10 @@ const Header: FC<HeaderPropTypes> = ({ showDrawer, setShowDrawer }) => {
   const [search, setSearch] = useState('');
 
   return (
-    <header className='w-[80rem]'>
+    <header className='w-[79rem]'>
       <TopDrawer showDrawer={showDrawer} setShowDrawer={setShowDrawer} />
       <SideDrawer showDrawer={showDrawer} setShowDrawer={setShowDrawer} />
-      <nav className='py-1 md:px-[1rem] md:py-3 lg:px-[4rem] lg:py-2.5 xl:px-0 text-white'>
+      <nav className='py-1 md:px-[1rem] md:py-3 lg:py-2.5 xl:px-0 text-white'>
         <div className='flex items-center justify-between'>
           {/* Menu and Logo */}
           <div className='flex flex-row-reverse items-center justify-center lg:flex-row gap-4 font-bold'>

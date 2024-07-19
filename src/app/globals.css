@@ -2,32 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #000000;
+  font-family: 'Roboto',Helvetica,Arial,sans-serif;
+  letter-spacing: .6px;
+
+}
+
+@layer components {
+  .stripe {
+      background-image: linear-gradient(
+      45deg,
+      rgba(49, 49, 49, 1) 10%,
+      transparent 5% 45%, 
+      rgba(49, 49, 49, 1) 35% 60%, 
+      transparent 55% 95%, 
+      rgba(49, 49, 49, 1) 90%
+      );
+      background-size: 10px 10px;
+  }
+  .stripeBody {
+      background-image: radial-gradient(
+          ellipse at 50% 50%,
+          gray 0%, 
+          transparent 20%, 
+          transparent 40%
+      ), linear-gradient(
+        -45deg,
+        rgba(49, 49, 49, 1) 10%,
+        transparent 5% 45%,
+        rgba(49, 49, 49, 1) 35% 60%,
+        transparent 55% 95%,
+        rgba(49, 49, 49, 1) 90%
+      );
+      background-size: 10px 10px;
+    }
+    
+}
+
+.gradientDown {
+  background-image: linear-gradient(180deg, rgba(17,17,17,1), rgba(17,17,17,.04));
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  .scrollable::-webkit-scrollbar {
+      display: hidden; /* Hide the default scrollbar */
+    }
+  
+    /* Container for the custom scrollbar */
+    .scrollable {
+      overflow: auto; /* Enable scrolling */
+      scrollbar-width: 2px; /* Hide scrollbar on Firefox */
+      -webkit-overflow-scrolling: touch; /* Enable momentum scrolling (iOS-like) */
+    }
+  
+    /* Style for the scroll indicator (track) */
+    .scrollable::-webkit-scrollbar-track {
+      background-color: transparent; /* Transparent track */
+    }
+  
+    /* Style for the thumb (handle) */
+    .scrollable::-webkit-scrollbar-thumb {
+      background-color: rgba(83, 83, 83, 1); /* Semi-transparent thumb */
+      /* border-radius: 8px; Roundness of the thumb */
+    }
+  
+    /* Style for the thumb on hover */
+    .scrollable::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(0, 0, 0, 0.5); /* Darker thumb on hover */
+    }
 }
